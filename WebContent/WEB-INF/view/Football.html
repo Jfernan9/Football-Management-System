@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <form onsubmit="submitForm()">
+        
+  <head>
+    <title>FootBall Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #004b91;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:  #FF3333;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F9F9F9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+      h1 {
+    text-shadow: 2px 2px 2px black;
+  }
+</style>
+    
+    
+    
+    </head>
+    
+  <body>
+      <div class="navbar">
+  <a href="#welcome">Home</a>
+  <a href="#about">About US</a>
+  <a href="#register">Register</a>
+  <a href="#Programs">Programs</a>
+  <a href="http://localhost:8097/spring-crm-rest/">programs</a>            
+  <div class="dropdown">
+    <button class="dropbtn">Sponsors
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Nike</a>
+      <a href="#">MLS</a>
+      <a href="#">Gatorade</a>
+    </div>
+  </div>
+</div>
+   <!-- <header>
+  <nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li id="sponsors-link" ><a href="#">Sponsors</a></li>
+  </ul>
+</nav>
+        <div id="Sponsors-tooltip">
+        <p>company A</p>
+        <p>company B</p>    
+        <p>company C</p>
+        </div>
+
+    </header> -->
+    
+     <main>
+      <section id="welcome">
+  <div class="background"></div>
+  <div class="content">
+    <h1>Welcome to OC Soccer Academy</h1>
+    <p>Our academy offers a variety of soccer programs for all ages and skill levels.</p>
+    
+  </div>
+</section>
+
+      
+      <section id="about">
+        <h2>About Us</h2>
+        <p>We are a soccer academy committed to developing young players through expert coaching and advanced training programs.</p>
+       <img src="images/ft.png" >
+      
+        
+        </section>
+          <section id="Programs" >
+        <h2>Programs</h2>
+        <table>
+          <tr>
+            <th>Program Name</th>
+            <th>Description</th>
+            <th>Age Group</th>
+          </tr>
+          <tr>
+            <td>Youth Academy</td>
+            <td>Weekly training sessions focused on skill development and teamwork.</td>
+            <td>5-12</td>
+          </tr>
+          <tr>
+            <td>Elite Training</td>
+            <td>Intensive training for advanced players looking to take their game to the next level.</td>
+            <td>13-18</td>
+          </tr>
+          <tr>
+            <td>Summer Camps</td>
+            <td>Fun and engaging soccer camps for kids during the summer months.</td>
+            <td>5-18</td>
+          </tr>
+        </table>
+      </section>
+      
+      <section id="register">
+        <h2>Register</h2>
+        <form>
+         <label for="username">Username:</label>
+          <input type="username" id="username" name="username" required><br>
+           <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required><br>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea><br>
+
+          <button type="submit">Send</button>
+            
+        </form>
+      </section>
+         
+    </main>
+    
+      
+    <footer>
+      <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Learn more</a>
+        <a href="Readme.html" target="_blank page">Read Me</a> 
+      </div>
+      <div>
+       <p class="copyright">© 2023 O.C.Soccer Academy</p>
+          <script>
+  function submitForm() {
+    alert("Thank you for your interest in OC Soccer Academy!");
+  }
+</script>
+          
